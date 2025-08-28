@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AUTOCAR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="shortcut icon" href="../../../imagens/autocar-logo.png" type="image/x-icon">
+</head>
+
+<style>
+    .corFundo {
+        background-image: linear-gradient(to right, #000000, #35161c, #652129, #97302e, #c7452a, #dc5748, #ee6b66, #ff7f83, #ff9fbb, #f9c2e3, #f4e2f9, #ffffff);
+    }
+
+    .outroFundo{
+        background-image: linear-gradient(to left, #000000, #35161c, #652129, #97302e, #c7452a, #dc5748, #ee6b66, #ff7f83, #ff9fbb, #f9c2e3, #f4e2f9, #ffffff);
+    }
+
+    .historia{
+        background-image: linear-gradient(to top, #ffffff, #d0d0d0, #a4a4a4, #797979, #515151, #3e3e3e, #2c2c2c, #1b1b1b, #161616, #111111, #090909, #000000);
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .produto {
+        text-align: center;
+        background: #fff;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .produto img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .color {
+        border-color: #fff;
+    }
+
+    .produto h3,.produto p {
+        font-size: 14px;
+    }
+
+</style>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary corFundo">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" style="font-family:fantasy">AUTOCAR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white"
+                                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"
+                                aria-current="page">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white"
+                                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"
+                                href="#modelos">Nossos modelos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white"
+                                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"
+                                href="#empresa">Sobre a empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white"
+                                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"
+                                href="#orc">Solicite seu orçamento</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+
+        <section>
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="../../../imagens/MC20.png" class="d-block w-100" alt="mc20">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../../../imagens/Maybach S680.png" class="d-block w-100" alt="maybach">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../../../imagens/Valkyrie.png" class="d-block w-100" alt="valk">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDoces"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDoces"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+
+
+        </section>
+
+
+        <!-- SEÇÃO DE CARROS: Mercedes-Benz -->
+        <section>
+            <div class="py-5" style="background-color: #000000;" id="modelos">
+                <h1 class="text-center mb-4" style="color:#ffffff;font-family: Georgia, serif">MODELOS</h1>
+                <hr class="color">
+                <br>
+                <h2 class="mb-4 text-center" style="color: #ffffff; font-family: Georgia, serif; font-size: 28px;">
+                    Mercedes-Benz
+                </h2>
+
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="https://media.oneweb.mercedes-benz.com/images/dynamic/europe/BR/214046/805_055/iris.png?q=COSY-EU-100-1713d0VXqrWFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtGyjtsd1v9cUfpUyXGEuiXJ0l3DAOB2NS1bApj7bI5uVKuQC31grkzNwP9m7jA6ohKV5Kh%25vqCrqyLRz3RYaxPXSrH1eHDn8wszxoiZr7YM4FnRjTg95zp6PDakNSeWHeutsd8Z3cUfiFWXGE4JYJ0lgChOB2znobQOxf5IkbKBoQC3PgwkzN5Pbm7jCemhKVf5s%25vqLvkyLRaGXYaxH5xrH18Mln8520R%256d9lo24YaIFbwOoZ1qgqyfyzda8CD7dB3AF6h0HJ&imgt=P27&bkgnd=9&pov=BE040&uni=m&width=880&crop="
+                            alt="car1">
+                        <h3 style="font-family: Georgia, serif">Mercedes-Benz Classe E Sedan</h3>
+                        <p>R$ 589.900,00 </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel1">Elegância Executiva</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Sedan executivo que combina luxo, tecnologia e conforto, ideal para quem
+                                            busca elegância e desempenho no dia a dia.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="https://media.oneweb.mercedes-benz.com/images/dynamic/europe/BR/295121/805/iris.png?q=COSY-EU-100-1713d0VXq0YFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtlaStsd2HVcUfpOkXGEubSJ0l3IrOB2NS1bApj7pI5uVKMQC31MTkzNwPnm7jZGohKVFXM%25vqCv%25yLRznRYax7NxrH1eJdn8wsOcoiZUixM4FG4fTg906O6PDBSqSeWAhItsd5kdcUfKM6XGEvhEJ0lgYxOB2PBqbApedlI5usc2QC3UkrkzNGmbm7j0hShKVBHM%25vqA8lyLRiO6Yax4JOroYfV8nMrPaEoiZCkuM4F8CQTg9j0C6PDe7oSeWsKjtsdUvGcUfGOyXGHRvW6INpqJRBOKBcNEyJlfDADSjSiNsG8u4NLwa2ITvU%25&imgt=P27&bkgnd=9&pov=BE040&uni=m&width=610&crop="
+                            alt="car2">
+                        <h3 style="font-family: Georgia, serif">Mercedes-Benz EQE Sedan</h3>
+                        <p>R$ 649.900,00 </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel2">Inovação Elétrica</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Sedan totalmente elétrico, sofisticado e tecnológico, oferecendo condução
+                                            silenciosa, autonomia eficiente e design futurista.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="https://media.oneweb.mercedes-benz.com/images/dynamic/europe/BR/206046/805_055/iris.png?q=COSY-EU-100-1713d0VXq0SFqtyO67PobzIr3eWsrrCsdRRzwQZ6ZHZbMw3SGtGyjtsd2HtcUfp8qXGEubmJ0l3ItOB2NQnbApjdCI5uVcZQC3qkWkzNRL6m7jZ6qhKVFKF%25vq9vjyLRDG6YaxW0ErH1dItn8wv8noiZL6ZM4FaRFTg90Q26PDBkbSeWAe2tsd5vDcUfCXkXGEzJwJ0lLoqOB2aScbApHtxI5u8KZQC3UMFkzNGzwm7j023hKVBbh%25vqAyTyLR5YmYaxCrJrH1zgtn8w7PwoiZKegM4FvsjTg9Ukm6tTuweSc60g2tsdHZdcUfarRXGEsaYJ0lU4hOB2GM1bApFUMI5uC4JQC3zg7kzN7P6m7jKGjhKVvYW%25vqL8dyL0fsjko9wdYfHVyJ1XRcYxqN8NmDmA9KLBZ59U2G1oQsvt&imgt=P27&bkgnd=9&pov=BE040&uni=m&width=610&crop="
+                            alt="car3">
+                        <h3 style="font-family: Georgia, serif">Mercedes-Benz</h3>
+                        <p>R$ 384.900,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel3">SUV Esportivo de Luxo</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>SUV esportivo de luxo, com design marcante, conforto elevado e desempenho
+                                            ágil para todos os terrenos.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="https://media.oneweb.mercedes-benz.com/images/dynamic/europe/BR/206080/804_054/iris.png?q=COSY-EU-100-1713d0VXqrpFqtyO67PobzIr3eWsrrCsdRRzwQZU3IZbMw3SGtGyWtsd2HtcUfp8qXGEubmJ0l3ItOB2NQnbApjdCI5uVcZQC3qkWkzNRL6m7jZ6qhKVFKF%25vq9vjyLRzLyYax7oxrH1Kj1n8wsOfoiZUbXM4FG4fTg90h36PDBSpSeWAtRtsd5kGcUfKr1XGEvnVJ0lL6tOB2aS5bApenpI5us5xQC3UEpkzNGJkm7j0hohKVB%25Q%25vqAycyLR5i6YaxC4xrH1zgun8wPA4oiZeIQM6o2xgTSMUiQ6PDL1mSeWvwxtsdPJTcUfeFNXGEsJBJ0lUCVOB2GoYbApF0zI5uCeuQC3zE7kzN7Jwm7jKh3hKVvHE%25vqJtdyL0fsjko9wdYfHVyJRCRcYxqN8NmDmA9KLBZ59U2G1oQsvt&imgt=P27&bkgnd=9&pov=BE040&uni=m&width=610&crop="
+                            alt="car4">
+                        <h3 style="font-family: Georgia, serif">Mercedes-Benz Classe C Sedan</h3>
+                        <p>R$ 914.900,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal4">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel4">Sofisticação Compacta</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Sedan sofisticado e tecnológico, une desempenho, conforto e design moderno em
+                                            um modelo compacto de luxo.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="https://media.oneweb.mercedes-benz.com/images/dynamic/europe/BR/223182/805_055/iris.png?q=COSY-EU-100-1713d0VXqrEFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtGyjtsd2vtcUfp8cXGEuiBJ0l3IrOB2NS1bApjtCI5uVQJQC3qvQkzNwTbm7jZ6vhKVFKN%25vq9UTyLRDGfYaxWbSrH1KJtn8wvOyoiZLioM4FaKrTg9Hve6PD8LFSeWiXStsd4JxcUfgrkXGEzymJ0l70NOB2KW%25bApvIXI5uLQDQC3bkOkzN4PKm7jgeFhKVPbQ%25vqeIDyLRsYWYaxCXErH1zHdn8w7VxoiZK%25ZM4FvywTg9L6O6PDaSoSeWHtWtsd8c%25cUfiAkXGE45BJ0ldYAOB2frFbApEkXI5uKMTQmIwlzkhQL5Jm7jGOmhKVUp4%25vq7UTyLRlgLYaxHaJrH18Bin8wiz2oiZ4M1M4zuA1YtEWpTuPbpPFxFIT9ZxexrlrKE847dvE5jCDtyAib&imgt=P27&bkgnd=9&pov=BE040&uni=m&width=610&crop="
+                            alt="car5">
+                        <h3 style="font-family: Georgia, serif">Mercedes-Benz Classe S Sedan Longo</h3>
+                        <p>R$ 1.639.900,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal5">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel5">O Padrão do Luxo</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Referência máxima em luxo e tecnologia automotiva, oferece espaço ampliado,
+                                            conforto inigualável e recursos de ponta.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="https://media.oneweb.mercedes-benz.com/images/dynamic/europe/BR/254387/805_055/iris.png?q=COSY-EU-100-1713d0VXq0SFqtyO67PobzIr3eWsrrCsdRRzwQZ6OGZbMw3SGtGyjtsd1JpcUfwFuXGEZT3J0l3YhOB2NgObApjPwI5uVmYQC3qhOkzNR%25km7jxcIhKV1pL%25vqwIdyLRZY2YaxF4hrH19gOn8wfOFoiZEiEM4Fl4QTg92zO6PDp7NSeWuK2tsd3JVcUfNrkXGEjnRJ0lVDxOB2sBObApUiyI5uG6MQC30E3kzNBJ9m7j86ZhKViSM%25vq4vZyLRgY6YaxPrprH1yJRn8wYzyoiZB5oM4FAC2Tg95Yn6PDCrsSeWz0jtsd7ktcUfi%25qXGE4GjJ0lgDfOB2PSObApetCI5usQMQC3Uv1kzNGLnm7j0amhKVBHV%25vqA8ayLR5i2YaxVXWrH1qJtn8wRTyoiZebXM4FsIPTg9UhO6PDG%25mSeW0h%25tXSNFUcJtAeMXGEi9EJ0l8DKOB2G8qbAp0k9I5uBmMQC3AE1kzN5aZm7jCl6hKVzTS%25vqEtTyLRlzLYaxHXSrH18Hdn8wi83oiZ45YM4FgCPTg9Pv96PDeLNSeWsXjtsdUY3cUfGXWXGE05RJ08xLdSQjuROxA2UPlBlYO2EW5WtVt4jU0i3gjaZHpQ6LGy&imgt=P27&bkgnd=9&pov=BE040&uni=m&width=610&crop="
+                            alt="car6">
+                        <h3 style="font-family: Georgia, serif">Mercedes-Benz GLC Coupé</h3>
+                        <p>R$ 934.900,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal6">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel6">Design Esportivo e Elegante
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>SUV de estilo esportivo, combina elegância, inovação e versatilidade,
+                                            entregando performance e presença marcante em qualquer cenário.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CARROS: Maserati -->
+        <section>
+            <div class="py-5" style="background-color: #000000;">
+                <h2 class="mb-4 text-center" style="color: #ffffff; font-family: Georgia, serif; font-size: 28px;">
+                    Maserati
+                </h2>
+
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="https://maserati.scene7.com/is/image/maserati/maserati/international/Models/my22/grecale/my22/location/square/D1360249-1.jpg?$1920x2000$&fit=constrain"
+                            alt="car1">
+                        <h3 style="font-family: Georgia, serif">Maserati Grecale</h3>
+                        <p>R$ 650.000,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal7">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel7">Luxo Versátil</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>SUV de luxo que combina elegância italiana, tecnologia de ponta e desempenho
+                                            dinâmico, perfeito para quem busca sofisticação no dia a dia.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="https://maserati.scene7.com/is/image/maserati/customer-app/mc20-owner-area/premium-service/PremiumService_OwnerArea_Carousel_Desktop_01.jpg?$1920x2000$&fit=constrain"
+                            alt="car2">
+                        <h3 style="font-family: Georgia, serif">Maserati MC20</h3>
+                        <p>R$ 2.989.000,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal8">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel8">Puro Superesporte Italiano
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Supercarro com motor V6 biturbo de 630 cv, design agressivo e estrutura em
+                                            fibra de carbono, unindo exclusividade, luxo e desempenho extremo.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="https://maserati.scene7.com/is/image/maserati/maserati/international/model-page/levante/performance/Levante%20OFFROAD_00.jpg?$1920x2000$&fit=constrain"
+                            alt="car3">
+                        <h3 style="font-family: Georgia, serif">Maserati Levante</h3>
+                        <p>R$ 920.000,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal9">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel9">SUV de Performance</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>SUV de luxo que combina linhas esportivas, motor potente e interior refinado,
+                                            perfeito para quem busca desempenho e sofisticação em qualquer estrada.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="https://maserati.scene7.com/is/image/maserati/maserati/international/shopping-tools/ghibli-gt-hybrid-performance-charged/B0029431-1-810x1440.jpg?$1920x2000$&fit=constrain"
+                            alt="car4">
+                        <h3 style="font-family: Georgia, serif">Maserati Ghibli</h3>
+                        <p>R$ 856.649,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal10">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel10">Esportividade Executiva
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Sedan esportivo de luxo que combina design italiano marcante, desempenho
+                                            dinâmico e conforto sofisticado, ideal para quem busca elegância com
+                                            performance.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="https://maserati.scene7.com/is/image/maserati/maserati/regional/jp/shopping-tools/quattroporte-fuoriserie-japan-tour-2022-april/_LUC2487-4_810x1440.jpg?$1920x2000$&fit=constrain"
+                            alt="car5">
+                        <h3 style="font-family: Georgia, serif">Maserati Quattroporte</h3>
+                        <p>R$ 600.000,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal11">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel11">O Ícone do Luxo Italiano
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Sedan de prestígio que une espaço, tecnologia avançada e a tradição Maserati
+                                            em elegância e performance.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="https://maserati.scene7.com/is/image/maserati/maserati/international/Models/my23/f-tributo/169/maserati_ghibli_ftributo_special_edition_2.jpg?$1920x2000$&fit=constrain"
+                            alt="car6">
+                        <h3 style="font-family: Georgia, serif">Maserati F Tributo Special Edition</h3>
+                        <p>R$ 1.390.000,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal12">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel12">ADN Audacioso</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Sedan de luxo que combina potência, design italiano marcante e tecnologia
+                                            avançada, oferecendo uma experiência de condução exclusiva e cheia de
+                                            personalidade.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CARROS: Aston Martin -->
+        <section>
+            <div class="py-5" style="background-color: #000000;">
+                <h2 class="mb-4 text-center" style="color: #ffffff; font-family: Georgia, serif; font-size: 28px;">
+                    Aston Martin
+                </h2>
+
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="https://www.astonmartinsaopaulo.com.br/webp/pub/modelos/ofertas/vantage_lg_250103_5439.jpg"
+                            alt="car1">
+                        <h3 style="font-family: Georgia, serif">Aston Martin Vantage Coupé</h3>
+                        <p>R$ 2.700.000,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal13">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel13">Superesportivo Britânico
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Esportivo de tração traseira e motor V8 biturbo, combina performance extrema
+                                            com design elegante, ideal para quem busca emoção e exclusividade.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="https://www.astonmartinsaopaulo.com.br/webp/pub/modelos/ofertas/dbx707_lg_250104_5759.jpg"
+                            alt="car2">
+                        <h3 style="font-family: Georgia, serif">Aston Martin DBX707</h3>
+                        <p>R$ 3.800.000,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal14">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel14">SUV Superesportivo de Luxo
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>O DBX707 é o SUV de luxo mais potente da Aston Martin, combinando desempenho
+                                            de supercarro com a versatilidade de um utilitário esportivo. Equipado com
+                                            motor V8 biturbo de 707 cv, acelera de 0 a 100 km/h em apenas 3,3 segundos e
+                                            atinge 310 km/h. Seu design elegante e interior refinado garantem uma
+                                            experiência de condução incomparável.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="https://www.astonmartinsaopaulo.com.br/webp/pub/modelos/ofertas/valhalla_lg_250105_0746.jpg"
+                            alt="car3">
+                        <h3 style="font-family: Georgia, serif">Aston Martin Valhalla</h3>
+                        <p>R$ 12 milhões</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal15">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel15">Hiperesportivo Híbrido de
+                                            Luxo</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>O Valhalla é o primeiro supercarro híbrido da Aston Martin, combinando
+                                            engenharia de Fórmula 1 com design inspirado no Valkyrie. Equipado com motor
+                                            V8 biturbo de 4.0L e três motores elétricos, entrega impressionantes 1.079
+                                            cv, acelera de 0 a 100 km/h em 2,5 segundos e atinge 350 km/h.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="https://www.astonmartinsaopaulo.com.br/webp/pub/modelos/ofertas/valiant_lg_250105_4618.jpg"
+                            alt="car4">
+                        <h3 style="font-family: Georgia, serif">Aston Martin Valiant</h3>
+                        <p>R$ 3 milhões</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal16">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel16">Hiperesportivo Manual de
+                                            Edição Limitada</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>O Valiant é a versão mais extrema e focada em pista do Valour, concebido a
+                                            partir de um pedido pessoal do piloto de F1 Fernando Alonso. Com apenas 38
+                                            unidades produzidas, é um carro legal para uso na rua, mas com alma de
+                                            pista. Equipado com motor V12 biturbo de 5,2 litros, câmbio manual de 6
+                                            marchas, suspensão Multimatic e rodas de magnésio, o Valiant é uma máquina
+                                            de desempenho puro e visceral.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="https://www.astonmartinsaopaulo.com.br/webp/pub/modelos/ofertas/vanquish_lg_250105_1306.jpg"
+                            alt="car5">
+                        <h3 style="font-family: Georgia, serif">Aston Martin Vanquish</h3>
+                        <p>R$ 2,1 milhões</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal17">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel17">Super GT V12 de Luxo</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>O Vanquish é o novo carro-chefe da Aston Martin, combinando potência,
+                                            elegância e tecnologia em um grand tourer de alto desempenho. Equipado com
+                                            um motor V12 biturbo de 5,2 litros, entrega 824 cv e 738 lb-ft de torque,
+                                            acelerando de 0 a 100 km/h em 3,2 segundos e atingindo uma velocidade máxima
+                                            de 344 km/h. Sua produção é limitada a menos de 1.000 unidades por ano, com
+                                            preços a partir de US$ 429.000.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="https://www.astonmartinsaopaulo.com.br/webp/pub/modelos/ofertas/vantage-s_lg_250725_0156.jpg"
+                            alt="car6">
+                        <h3 style="font-family: Georgia, serif">Aston Martin Vantage S</h3>
+                        <p>R$ 1,2 milhão</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal18">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel18">Cupê Esportivo de Alta
+                                            Performance</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>O Vantage S é uma versão mais potente do Vantage, com motor V8 biturbo de 4,0
+                                            L (680 cv, 800 Nm), 0-100 km/h em 3,3 s, chassi e suspensão aprimorados,
+                                            detalhes aerodinâmicos no exterior e interior em Alcantara® e couro,
+                                            combinando esportividade e sofisticação.
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 historia"  id="empresa">
+            <div class="container">
+                <!-- Título -->
+                <h2 class="text-center" style="font-family: 'Playfair Display', serif; color: #fff;">A Experiência Autocar</h2>
+
+                <!-- História -->
+                <h3 style="font-family: 'Playfair Display', serif; color: #fff;">Origem e Legado</h3>
+                <p style="font-family: 'Merriweather', serif; color: #fff;">
+                    A Autocar nasceu da paixão de Grilo e Daniel por carros de luxo e da visão de criar algo único no
+                    mercado automotivo. Desde a fundação, a empresa teve como propósito oferecer veículos exclusivos e
+                    proporcionar uma experiência diferenciada aos seus clientes. Cada automóvel é cuidadosamente
+                    selecionado, garantindo qualidade, performance e sofisticação. Mais do que vender carros, a Autocar
+                    busca conectar clientes a um estilo de vida único, transformando cada compra em um momento
+                    memorável.
+                </p>
+                <h3 style="font-family: 'Playfair Display', serif; color: #fff;">Empreendedorismo e Crescimento</h3>
+                <p style="font-family: 'Merriweather', serif; color: #fff;">
+                    O caminho da Autocar é marcado pelo espírito empreendedor e a busca constante por inovação. Desde
+                    seus primeiros anos, Grilo e Daniel trabalharam para consolidar uma empresa que alia exclusividade e
+                    atendimento personalizado. Com o crescimento da marca, a Autocar passou a investir fortemente no
+                    ambiente digital, lançando um site moderno, funcional e interativo, onde clientes podem explorar
+                    cada veículo em detalhes, conhecer novidades e até agendar experiências exclusivas, como test drives
+                    personalizados. Esse movimento reforça o compromisso da empresa com a conveniência e a inovação, sem
+                    perder a sofisticação que é sua marca registrada.
+                </p>
+                <h3 style="font-family: 'Playfair Display', serif; color: #fff;">Reconhecimento e Confiança</h3>
+                <p style="font-family: 'Merriweather', serif; color: #fff;">
+                    Hoje, a Autocar é reconhecida como uma referência em carros de luxo e experiências premium,
+                    construindo uma reputação sólida baseada em confiança, qualidade e atenção aos detalhes. Cada
+                    cliente atendido se torna parte de uma história de excelência, em que tradição e modernidade se unem
+                    para oferecer o melhor do universo automotivo. A empresa continua a expandir seus horizontes, sempre
+                    mantendo o compromisso de entregar experiências únicas, exclusivas e inesquecíveis, consolidando seu
+                    legado no mercado de luxo.
+                </p>
+            </div>
+        </section>
+
+        <section id="orc" class="py-5">
+            <div class="container">
+              <h2 class="text-center mb-4" style="font-family: Georgia, serif">Solicitar Orçamento</h2>
+              <p class="text-center mb-5" style="font-family: 'Merriweather', serif;">
+                Preencha o formulário abaixo e nossa equipe entrará em contato com um orçamento personalizado.
+              </p>
+          
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <form method="post" enctype="text/plain">
+                    <div class="mb-3">
+                      <label for="nome" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">E-mail</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="telefone" class="form-label">Telefone</label>
+                      <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Seu telefone">
+                    </div>
+                    <div class="mb-3">
+                      <label for="mensagem" class="form-label">Mensagem</label>
+                      <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Informações adicionais ou dúvidas"></textarea>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary">Enviar Solicitação</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+    </main>
+
+
+
+
+    <footer style="width:100%; color:#fff; text-align:center; padding:20px 0;" class="corFundo">
+        <p>© 2025 - Todos os direitos reservados.</p>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

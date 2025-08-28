@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#cabecalho {
+    height: 15vh;
+    width: 100vw;
+}
+
+.corPreto {
+    background-image: linear-gradient(to right, #f9bf53, #f8c366, #f8c778, #f6cc89, #f4d09a) !important;
+}
+
+.corPreto a {
+    color: rgb(255, 255, 255);
+}
+
+.corPreto a:hover {
+    color: rgb(255, 129, 25);
+}
+
+.corPreto a:active {
+    color: rgb(173, 104, 38);
+}
+
+/* A propriedade "focus" é usada para estilizar um elemento quando ele recebe foco, geralmente através de interação do usuário (clique, toque, teclado */
+.corPreto a:focus {
+    color: #9e7836;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#pagina1 {
+    width: 100vw;
+    height: auto;
+}
